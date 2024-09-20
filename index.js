@@ -50,6 +50,12 @@ router.get("/api/wx_openid", async (ctx) => {
   }
 });
 
+router.get("/api/test", async (ctx) => {
+  ctx.body = {
+    text: "哈哈哈哈哈"
+  }
+});
+
 const app = new Koa();
 app
   .use(logger())
